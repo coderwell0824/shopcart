@@ -11,3 +11,10 @@
    明确告诉 Next.js 这个组件需要在客户端渲染（Client Side Rendering）。
    允许在组件中使用 React 的 hooks（如 useState、useEffect、usePathname 等）。
    允许访问浏览器 API。
+7. 在不同屏幕宽度下展示不同的样式图标
+
+css 样式:
+inset-y-0
+translate-x-0
+-translate-x-full
+tracking-wide

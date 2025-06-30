@@ -4,9 +4,10 @@ import React, { FC } from "react";
 
 interface ILogoProps {
   className?: string;
+  spanDesign?: string;
 }
 
-const Logo: FC<ILogoProps> = ({ className }) => {
+const Logo: FC<ILogoProps> = ({ className, spanDesign }) => {
   return (
     <Link href="/">
       <h2
@@ -16,7 +17,12 @@ const Logo: FC<ILogoProps> = ({ className }) => {
         )}
       >
         Shopcar
-        <span className="text-shop_light_green group-hover:text-shop_dark_green hoverEffect">
+        <span
+          className={cn(
+            "text-shop_light_green group-hover:text-shop_dark_green hoverEffect",
+            spanDesign
+          )}
+        >
           t
         </span>
       </h2>
